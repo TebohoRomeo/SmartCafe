@@ -1,0 +1,71 @@
+:host {
+    // background: #e93939;
+    --offset-top: 200px;
+}
+
+ion-header {
+    --background: #ffffff;
+    background: #ffffff;
+    
+    ion-toolbar, ion-item {
+        --background: #ffffff;
+        background: #ffffff;
+        padding: 0 10px;
+    }
+
+    ion-toolbar {
+        .bordered {
+            --border-radius: 10px;
+            --box-shadow: 5px 5px 10px #d1d1d1, -5px -5px 10px #ffffff
+        }
+        .title {
+            font-weight: bold;
+        }
+
+        ion-avatar {
+            img {
+                width: 30px;
+                height: 30px;
+                // margin-top: 20px;
+            }
+        }
+    }
+}
+
+ion-content {
+
+    .related {
+        // text-align: center;
+        ion-label {
+            h1 {
+                color: #000;
+                font-weight: bold;
+            }
+        }
+    }
+    .line {
+        hr {
+            background: #92949c;
+            height: 4px;
+            width: 15%;
+            border-radius: 5px;
+        }
+    }
+
+    .bookings {
+        --background: #e93939;
+    }
+    .invoice {
+        --background: #caf599;
+    }
+    .business {
+        --background: #ff7f35;
+    }
+
+    .forYou {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+}

@@ -1,0 +1,51 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar class="ion-no-border">
+    <!-- <div class="button-bar ion-margin-top">
+      <ion-button fill="clear" color="dark">Klippa</ion-button>
+      <ion-button fill="clear" color="dark">Klippa</ion-button>
+      <ion-button fill="clear" color="dark">Klippa</ion-button>
+      <ion-button fill="clear" color="dark">Klippa</ion-button>
+      <ion-button fill="clear" color="dark">Klippa</ion-button>
+    </div> -->
+    <!-- <ion-title>Create</ion-title> -->
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-margin-horizontal" style="text-align: center;">
+    <ion-row>
+      <ion-col size="4" (click)="goToSignDocs()">
+        <ion-icon name="document-signature-outline" color="dark" style="height: 2rem; width: 2rem;"></ion-icon>
+        <p>Sign</p>
+      </ion-col>
+      <ion-col size="4" (click)="goToScanner()">
+        <ion-icon name="camera-outline" color="dark" style="height: 2rem; width: 2rem;"></ion-icon>
+        <p>Scanner</p>
+      </ion-col>
+      <ion-col size="4" (click)="goToWriteCvProfile()">
+        <ion-icon name="pencil-outline" color="dark" style="height: 2rem; width: 2rem;"></ion-icon>
+        <p>CV</p>
+      </ion-col>
+      <ion-col size="4" (click)="goToSendEmail()">
+        <ion-icon name="mail-outline" color="dark" style="height: 2rem; width: 2rem;"></ion-icon>
+        <p>Send Email</p>
+      </ion-col>
+      <ion-col size="4" (click)="goToInvoice()">
+        <ion-icon name="receipt-outline" color="dark" style="height: 2rem; width: 2rem;"></ion-icon>
+        <p>Invoice</p>
+      </ion-col>
+      <ion-col size="4" (click)="goToInvoice()">
+        <ion-icon name="ticket-outline" color="dark" style="height: 2rem; width: 2rem;"></ion-icon>
+        <p>Tickets</p>
+      </ion-col>
+      <ion-col size="4" (click)="goToLetter()">
+        <ion-icon name="documents-outline" color="dark" style="height: 2rem; width: 2rem;"></ion-icon>
+        <p>Govt Docs</p>
+      </ion-col>
+      <ion-col size="4" (click)="goToCv()">
+        <ion-icon name="sign-doc-outline" color="dark" style="height: 2rem; width: 2rem;"></ion-icon>
+        <p>Templates</p>
+      </ion-col>
+    </ion-row>
+  </div>
+</ion-content>

@@ -1,0 +1,30 @@
+ion-header {
+    
+    ion-toolbar, ion-item {
+        --background: #ffffff;
+        background: #ffffff;
+        padding: 0 10px;
+    }
+
+    ion-toolbar {
+        .bordered {
+            --border-radius: 10px;
+            --box-shadow: 5px 5px 10px #d1d1d1, -5px -5px 10px #ffffff
+        }
+
+        ion-button {
+            ion-icon {
+                width: 25px;
+            }
+        }
+    }
+}
+
+.textarea-item {
+    --min-height: 380px;
+}
+
+// .textarea {
+//     max-height: 350px;
+//     background-color: blue;
+// }

@@ -1,0 +1,6 @@
+{
+	"appId": "io.smartConnect.starter",
+	"appName": "smartConnect",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

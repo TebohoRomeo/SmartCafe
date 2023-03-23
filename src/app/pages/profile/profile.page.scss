@@ -1,0 +1,42 @@
+ion-header {
+    ion-toolbar {
+        --background: #ffffff;
+        background: #ffffff;
+        padding: 0 10px;
+    }
+
+    .profile {
+        text-align: center;
+
+        h1 {
+            font-weight: bold;
+        }
+        
+        ion-avatar {
+           margin-left: 42%;
+           height: 5rem;
+           width: 5rem;
+        }
+    }
+}
+
+ion-content {
+    // ion-card {
+    //     height: 9rem;
+    // }
+
+    hr {
+        background: gray;
+        width: 90%;
+    }
+}
+
+
+// voucher (ticket)
+// deals and events (bell)
+
+// receipt (slip)
+// subscribtions (calendar)
+// payment menthods (card)
+
+// Notice (Bell or speaker)

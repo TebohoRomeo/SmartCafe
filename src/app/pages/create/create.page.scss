@@ -1,0 +1,17 @@
+ion-header {
+    
+    ion-toolbar{
+        --background: #ffffff;
+        background: #ffffff;
+        padding: 0 10px;
+    }
+}
+
+.button-bar {
+    display: flex;
+    overflow-x: scroll;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}

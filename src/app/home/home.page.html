@@ -1,0 +1,74 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-title size="large" class="title">SmartCafe</ion-title>
+    <ion-avatar slot="end" (click)="goToProfile()" class="ion-margin-top">
+      <img src="../../assets/img/model_4.png" alt="">
+    </ion-avatar>
+  </ion-toolbar>
+    <div class="ion-margin-top ion-margin-horizontal" mode="ios">
+      <ion-row>
+        <ion-col size="4">
+          <ion-button expand="block" shape="round" fill="outline" color="dark" (click)="goToCreate()">
+            <ion-icon name="add-outline" slot="start"></ion-icon>
+            Create
+          </ion-button>
+        </ion-col>
+        <ion-col size="4">
+          <ion-button expand="block" shape="round" fill="outline" color="dark">
+            <ion-icon name="bookmark-outline" slot="start"></ion-icon>
+            Saved
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </div>
+</ion-header>
+
+<ion-content fullscreen="true" mode="ios">
+  <!-- <div class="related">
+    <ion-label color="medium">
+      <h1 class="ion-margin-bottom ion-margin-horizontal ion-padding">Helpful</h1>
+    </ion-label>
+  </div> -->
+  <ion-slides [options]="slideOpt">
+    <ion-slide class="sli">
+      <ion-card  color="warning" class="bookings ion-padding" style="width: 100%; height: 100%;" (click)="goToBookings()">
+        <ion-card-title>
+          Documents
+        </ion-card-title>
+        <ion-card-content>
+          Get document templates
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card  color="dark" class="bookings ion-padding" style="width: 100%; height: 100%;" (click)="goToBookings()">
+        <ion-card-title>
+          Bookings
+        </ion-card-title>
+        <ion-card-content>
+          Book a ticket or hotel room
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card color="primary" class="invoice ion-padding" style="width: 100%; height: 100%;" (click)="goToInvoice()">
+        <ion-card-title>
+          Invoice
+        </ion-card-title>
+        <ion-card-content>
+          Send invoices to a business or client
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+
+  <!-- <div class="line">
+    <hr>
+  </div> -->
+
+  <!-- <div class="related">
+    <ion-label color="medium" >
+      <h1 class="ion-margin-bottom ion-padding">For You</h1>
+    </ion-label>
+  </div> -->
+</ion-content>

@@ -1,0 +1,26 @@
+ion-header {
+    
+    ion-toolbar, ion-item {
+        --background: #ffffff;
+        background: #ffffff;
+        padding: 0 10px;
+    }
+
+    ion-toolbar {
+        .bordered {
+            --border-radius: 10px;
+            --box-shadow: 5px 5px 10px #d1d1d1, -5px -5px 10px #ffffff
+        }
+    }
+}
+
+.Add {
+    text-align: center;
+    margin-top: 50%;
+}
+
+// ion-button {
+//     height: 50px;
+//     width: 50px;
+//     --border-radius: 50%;
+// }

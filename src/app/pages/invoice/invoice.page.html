@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button color="dark"></ion-back-button>
+    </ion-buttons>
+    <ion-button fill="clear" shape="round"  color="primary" expand="block" slot="end" [disabled]="!pdfObj" mode="ios">Save</ion-button>
+    <ion-title>Invoice</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="ion-padding">
+    Making a pdf file
+  </div>
+
+  <ion-item mode="ios">
+    <ion-label stacked>To</ion-label>
+    <ion-input [(ngModel)]="letterObj.to" placeholder="Type email"></ion-input>
+  </ion-item>
+
+  <ion-item mode="ios">
+    <!-- <ion-label stacked>Item Description</ion-label> -->
+    <ion-textarea [(ngModel)]="letterObj.description" rows="10" placeholder="Item Description"></ion-textarea>
+  </ion-item>
+
+  <ion-item mode="ios">
+    <!-- <ion-label stacked>Item Description</ion-label> -->
+    <ion-input [(ngModel)]="letterObj.items" rows="10" placeholder="Items"></ion-input>
+  </ion-item>
+
+
+  <ion-item mode="ios">
+    <ion-label stacked>Total</ion-label>
+    <ion-input [(ngModel)]="letterObj.total" placeholder="R20, 000, 00"></ion-input>
+  </ion-item>
+
+  <ion-button expand="block" full (click)="createPdf()" mode="ios">Send Invoince</ion-button>
+  <ion-button expand="block" full (click)="dowloadPDF()" mode="ios">download Invoince</ion-button>
+
+</ion-content>
+

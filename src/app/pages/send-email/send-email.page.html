@@ -1,0 +1,59 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button color="dark"></ion-back-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button color="dark"  mode="ios">
+        <ion-icon name="attach-outline" slot="icon-only"></ion-icon>
+      </ion-button>
+      <ion-button color="dark"  mode="ios" (click)="sendEmail()">
+        <ion-icon name="send-outline" slot="icon-only"></ion-icon>
+      </ion-button>
+      <ion-button color="dark"  mode="ios">
+        <ion-icon name="bookmark-outline" slot="icon-only"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <div class="cards ion-margin-top">
+    <ion-item lines="full">
+      <ion-label slot="start">
+        From
+      </ion-label>
+      <ion-input type="email">
+        <!-- smartcafe@internet.com -->
+      </ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label slot="start">
+        To
+      </ion-label>
+      <ion-input type="email"></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-input type="text" placeholder="Subject"></ion-input>
+    </ion-item>
+    <ion-item lines="none" class="textarea-item">
+      <ion-textarea type="text" placeholder="Compose email" rows="25" class="textarea"></ion-textarea>
+    </ion-item>
+  </div>
+
+  <!-- <ion-item lines="none">
+    <ion-text slot="start">
+      Attachments
+    </ion-text>
+  </ion-item> -->
+  <!-- <div class="attachments ion-margin-horizontal">
+    Attachments to be displayed here
+  </div> -->
+
+
+  <!-- <div class="links ion-margin-horizontal">
+    Links to be displayed here
+  </div> -->
+
+</ion-content>

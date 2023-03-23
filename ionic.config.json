@@ -1,0 +1,7 @@
+{
+  "name": "smartConnect",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

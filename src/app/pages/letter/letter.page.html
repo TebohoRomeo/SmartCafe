@@ -1,0 +1,39 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button color="dark"></ion-back-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button color="dark">
+        Send
+      </ion-button>
+    </ion-buttons>
+    <!-- <ion-title>Write  a letter</ion-title> -->
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item lines="full">
+    <ion-label>Cover Letter</ion-label>
+    <ion-icon name="letter" slot="end"></ion-icon>
+  </ion-item>
+
+  <!-- <div class="ion-padding">
+    Write a letter
+  </div> -->
+  <div class="content-container ion-padding-top">
+    <ion-item mode="ios">
+      <ion-label stacked>To</ion-label>
+      <ion-input [(ngModel)]="letterObj.to" placeholder="Name of the receiver"></ion-input>
+    </ion-item>
+  
+    <ion-item mode="ios">
+      <!-- <ion-label stacked>Item Description</ion-label> -->
+      <ion-textarea [(ngModel)]="letterObj.letter" rows="100" placeholder="Write your letter"></ion-textarea>
+    </ion-item>
+  </div>
+  <div class="form-btn ion-padding-top">
+    <ion-button expand="block" (click)="createPdf()" mode="ios">Send Letter</ion-button>
+  </div>
+
+</ion-content>

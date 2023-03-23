@@ -1,0 +1,106 @@
+ion-header {
+    
+    ion-toolbar, ion-item {
+        --background: #ffffff;
+        background: #ffffff;
+        padding: 0 10px;
+    }
+
+    ion-toolbar {
+        .bordered {
+            --border-radius: 10px;
+            --box-shadow: 5px 5px 10px #d1d1d1, -5px -5px 10px #ffffff
+        }
+    }
+}
+.contact-option {
+    margin-left: 5px;
+}
+
+
+.event-ticket-description {
+    color: #2a2a2a;
+    padding-top: 10px;
+
+    p {
+        color: #656565;
+    }
+
+}
+
+.imgSlider {
+    img {
+       height: 300px;
+    }
+}
+
+.variation-selector {
+    margin-top: 30px;
+    display: flex;
+    position: relative;
+
+    .active-variation {
+        opacity: 1 !important;
+        z-index: 1 !important;
+    }
+
+    .sizes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 100%;
+        opacity: 0;
+        z-index: 0;
+        padding-bottom: 30px;
+
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f3f3f3;
+            width: 50px;
+            height: 50px;
+            margin-right: 8px;
+            transition: 0.5s ease-in-out;
+        }
+
+        .active {
+            color: #ffffff;
+            background: var(--ion-color-primary);
+        }
+    }
+
+}
+
+.contents {
+    margin-top: 90px;
+    text-align: center;
+
+    h1 {
+        font-size: 50px;
+        font-weight: bold;
+    }
+}
+
+ion-footer {
+    ion-row {
+        padding: 0;
+
+        ion-col {
+            padding: 0;
+
+            ion-button {
+                margin: 0;
+                height: 50px;
+                font-size: 18px;
+                box-shadow: none;
+            }
+        }
+    }
+}
+
+// This will remove footer shadow on android
+.footer-md::before {
+    background: none !important;
+}

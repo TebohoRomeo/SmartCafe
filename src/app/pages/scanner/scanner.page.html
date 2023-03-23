@@ -1,0 +1,33 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar class="ion-no-border">
+    <ion-buttons slot="start">
+      <ion-back-button color="dark"></ion-back-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button (click)="dowloadPDF()" [disabled]="!pdfObj" *ngIf="photoPreview">
+        <ion-icon name="download-outline" slot="icon-only"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>
+      Scanner
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <img [src]="photoPreview" *ngIf="photoPreview" alt="">
+  <ion-button *ngIf="photoPreview" (click)="createPDF()">Next</ion-button>
+
+  <div class="camera-icon" *ngIf="!photoPreview">
+    <ion-icon name="camera-outline"></ion-icon>
+    <p>Click the camera to scan documents</p>
+  </div>
+
+  <ion-fab  vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button (click)="takePicture()">
+      <ion-icon name="camera-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+</ion-content>
