@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { SignDocumentPageRoutingModule } from './sign-document-routing.module';
 
 import { SignDocumentPage } from './sign-document.page';
+import { ComponentsModule } from '../../components/components.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    SignDocumentPageRoutingModule
+    SignDocumentPageRoutingModule,
+    ComponentsModule,
   ],
   declarations: [SignDocumentPage]
 })

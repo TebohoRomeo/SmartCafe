@@ -14,10 +14,11 @@ import { FileOpener } from '@ionic-native/file-opener/ngx';
 import { DocumentScanner } from '@ionic-native/document-scanner/ngx';
 import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { HomePageModule } from './home/home.module';
-// import { AddFileModal } from './pages/add-file-modal/add-file-modal.module';
+
+import { SignPadComponent } from './components/sign-pad/sign-pad.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA],
   imports: [
     HttpClientModule,

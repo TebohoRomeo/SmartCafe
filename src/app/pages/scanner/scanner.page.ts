@@ -33,12 +33,12 @@ export class ScannerPage implements OnInit {
     private fileOpener: FileOpener) { }
 
   ngOnInit() {
-    this.myForm = this.fb.group({
-      showLogo: true,
-      from: 'Teboho',
-      to: 'KAIOTY',
-      text: 'testing scanner',
-    });
+    // this.myForm = this.fb.group({
+    //   showLogo: true,
+    //   from: 'Teboho',
+    //   to: 'KAIOTY',
+    //   text: 'testing scanner',
+    // });
     this.loadLocalAssetToBase64()
   }
 
@@ -60,19 +60,17 @@ export class ScannerPage implements OnInit {
       resultType: CameraResultType.Base64,
       source: CameraSource.Camera
     });
-
-    console.log('image');
     
     this.photoPreview = `data:image/jpeg;base64,${image.base64String}`;
   }
 
   createPDF() {
-    const valueForm = this.myForm.value; 
+    // const valueForm = this.myForm.value; 
     const image = this.photoPreview ? {image: this.photoPreview, width: 300} : {};
 
 
     const docDefinition = {
-
+      
       content: [
         image,
       ]

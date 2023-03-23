@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sign-document.page.scss'],
 })
 export class SignDocumentPage implements OnInit {
-
+  
+  image: string;
   constructor() { }
 
   ngOnInit() {
+  }
+  
+  signImage(event) {
+    this.image = event;
+    console.log(this.image);
   }
 
 }
