@@ -16,7 +16,16 @@
 
 <ion-content>
 
-  <img [src]="photoPreview" *ngIf="photoPreview" alt="">
+  <ion-item lines="none" *ngIf="photoPreview">
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon name="ellipsis-vertical-outline" slot="icon-only"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <img [src]="photoPreview" alt="" slot="start" style="height: 4rem; width: 4rem;">
+    <ion-label slot="start">scanned</ion-label>
+  </ion-item>
+
   <ion-button *ngIf="photoPreview" (click)="createPDF()">Next</ion-button>
 
   <div class="camera-icon" *ngIf="!photoPreview">
@@ -24,7 +33,7 @@
     <p>Click the camera to scan documents</p>
   </div>
 
-  <ion-fab  vertical="bottom" horizontal="end" slot="fixed">
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
     <ion-fab-button (click)="takePicture()">
       <ion-icon name="camera-outline"></ion-icon>
     </ion-fab-button>

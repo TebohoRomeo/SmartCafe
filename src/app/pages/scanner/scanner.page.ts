@@ -83,7 +83,7 @@ export class ScannerPage implements OnInit {
      if(this.plt.is('cordova')) {
       this.pdfObj.getBase64(async (data) => {
         try {
-          let path = `pdf/myScan_${Date.now()}.pdf`;
+          let path = `pdf/myScan_${Date.now()}.pdf`;          
 
           const result = await Filesystem.writeFile({
             path,

@@ -19,14 +19,6 @@ const routes: Routes = [
     loadChildren: () => import('./pages/bookings/bookings.module').then( m => m.BookingsPageModule)
   },
   {
-    path: 'ceretify-documents',
-    loadChildren: () => import('./pages/ceretify-documents/ceretify-documents.module').then( m => m.CeretifyDocumentsPageModule)
-  },
-  {
-    path: 'add-file-modal',
-    loadChildren: () => import('./pages/add-file-modal/add-file-modal.module').then( m => m.AddFileModalPageModule)
-  },
-  {
     path: 'ticket-details',
     loadChildren: () => import('./pages/ticket-details/ticket-details.module').then( m => m.TicketDetailsPageModule)
   },

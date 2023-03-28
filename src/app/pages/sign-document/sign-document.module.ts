@@ -15,7 +15,7 @@ import { ComponentsModule } from '../../components/components.module';
     FormsModule,
     IonicModule,
     SignDocumentPageRoutingModule,
-    ComponentsModule,
+    // ComponentsModule,
   ],
   declarations: [SignDocumentPage]
 })
