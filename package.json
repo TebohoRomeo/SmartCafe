@@ -38,6 +38,7 @@
     "cordova-plugin-document-scanner": "^4.2.7",
     "cordova-plugin-file-opener2": "^3.0.5",
     "ionicons": "^6.0.3",
+    "jetifier": "^2.0.0",
     "pdfmake": "^0.2.6",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",

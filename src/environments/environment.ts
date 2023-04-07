@@ -3,7 +3,16 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebaseConfig: {
+    apiKey: "AIzaSyAQPBjcgyaF0MTC0NCy9FLQXWuPX2iBsqk",
+    authDomain: "smartcafe-379111.firebaseapp.com",
+    projectId: "smartcafe-379111",
+    storageBucket: "smartcafe-379111.appspot.com",
+    messagingSenderId: "907031214032",
+    appId: "1:907031214032:web:e957ade5539113336d2bd5",
+    measurementId: "G-YHZ2LQNL9F"
+  },
 };
 
 /*
@@ -14,3 +23,11 @@ export const environment = {
  * on performance if an error is thrown.
  */
 // import 'zone.js/plugins/zone-error';  // Included with Angular CLI.
+
+
+// Import the functions you need from the SDKs you need
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
