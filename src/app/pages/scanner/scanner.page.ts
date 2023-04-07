@@ -27,6 +27,8 @@ export class ScannerPage implements OnInit {
   photoPreview = null;
   logoData = null;
 
+  docDate = Date.now();
+
   constructor(private fb: FormBuilder,
     private plt: Platform,
     private http: HttpClient,

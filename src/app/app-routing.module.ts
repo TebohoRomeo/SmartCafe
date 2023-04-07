@@ -43,14 +43,6 @@ const routes: Routes = [
     loadChildren: () => import('./pages/create/create.module').then( m => m.CreatePageModule)
   },
   {
-    path: 'topup',
-    loadChildren: () => import('./pages/topup/topup.module').then( m => m.TopupPageModule)
-  },
-  {
-    path: 'menu-modal',
-    loadChildren: () => import('./pages/menu-modal/menu-modal.module').then( m => m.MenuModalPageModule)
-  },
-  {
     path: 'write-cv-profile',
     loadChildren: () => import('./pages/write-cv-profile/write-cv-profile.module').then( m => m.WriteCvProfilePageModule)
   },

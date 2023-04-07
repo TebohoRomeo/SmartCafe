@@ -1,17 +1,29 @@
 <ion-header class="ion-no-border">
-  <ion-toolbar>
+  <ion-toolbar class="ion-no-border">
     <ion-title size="large" class="title">SmartCafe</ion-title>
-    <ion-avatar slot="end" (click)="goToProfile()" class="ion-margin-top">
-      <img src="../../assets/img/model_4.png" alt="">
-    </ion-avatar>
+    <ion-buttons slot="end" class="ion-margin-top">
+      <ion-button color="dark" mode="ios">
+        <ion-icon name="search-outline" slot="icon-only"></ion-icon>
+      </ion-button>
+      <ion-button color="dark" (click)="goToProfile()" mode="ios">
+        <ion-icon name="person-outline" slot="icon-only"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
-    <div class="ion-margin-top ion-margin-horizontal" mode="ios">
+  <ion-item lines="none" class="ion-padding-top" (click)="pickFile()">
+    <ion-icon name="folder-outline" slot="start"></ion-icon>
+    <ion-label slot="start">
+      <h1>Open</h1>
+    </ion-label>
+  </ion-item>
+
+  <!-- <ion-button expand="block" shape="round" fill="clear" color="dark" (click)="goToCreate()">
+    <ion-icon name="add-outline" slot="start"></ion-icon>
+    O
+  </ion-button> -->
+    <!-- <div class="ion-margin-top ion-margin-horizontal" mode="ios">
       <ion-row>
         <ion-col size="4">
-          <ion-button expand="block" shape="round" fill="outline" color="dark" (click)="goToCreate()">
-            <ion-icon name="add-outline" slot="start"></ion-icon>
-            Create
-          </ion-button>
         </ion-col>
         <ion-col size="4">
           <ion-button expand="block" shape="round" fill="outline" color="dark">
@@ -20,20 +32,30 @@
           </ion-button>
         </ion-col>
       </ion-row>
-    </div>
+    </div> -->
 </ion-header>
 
 <ion-content fullscreen="true" mode="ios">
-  
-  <!-- <h1>hana ho sebetsa</h1> -->
 
-  <!-- <div class="line">
-    <hr>
-  </div> -->
-
-  <!-- <div class="related">
-    <ion-label color="medium" >
-      <h1 class="ion-margin-bottom ion-padding">For You</h1>
+  <ion-item lines="none" *ngIf="photoPreview" class="ion-padding-top">
+    <ion-buttons slot="end">
+      <ion-button (click)="createPDF()">
+        <ion-icon name="ellipsis-vertical-outline" slot="icon-only"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <img [src]="photoPreview" alt="" slot="start" style="height: 4rem; width: 4rem;">
+    <ion-label slot="start">
+      <h1>{{docDate}}</h1>
+      <p>Scanned document</p>
     </ion-label>
-  </div> -->
+  </ion-item>
+
+  <!-- <ion-button (click)="saveImage(photoPreview)">save image</ion-button> -->
+
+
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+    <ion-fab-button (click)="takePicture()">
+      <ion-icon name="camera-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
 </ion-content>

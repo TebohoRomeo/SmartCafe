@@ -18,15 +18,18 @@
 
   <ion-item lines="none" *ngIf="photoPreview">
     <ion-buttons slot="end">
-      <ion-button>
+      <ion-button (click)="createPDF()">
         <ion-icon name="ellipsis-vertical-outline" slot="icon-only"></ion-icon>
       </ion-button>
     </ion-buttons>
     <img [src]="photoPreview" alt="" slot="start" style="height: 4rem; width: 4rem;">
-    <ion-label slot="start">scanned</ion-label>
+    <ion-label slot="start">
+      <h1>{{docDate}}</h1>
+      <p>Scanned document</p>
+    </ion-label>
   </ion-item>
 
-  <ion-button *ngIf="photoPreview" (click)="createPDF()">Next</ion-button>
+  <!-- <ion-button *ngIf="photoPreview" (click)="createPDF()">Next</ion-button> -->
 
   <div class="camera-icon" *ngIf="!photoPreview">
     <ion-icon name="camera-outline"></ion-icon>
